@@ -1,0 +1,42 @@
+{
+  "name": "svelte-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:ui": "vitest --ui --coverage.enabled=true",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write --ignore-path .gitignore \"**/*.{js,ts,svelte}\"",
+    "lint": "prettier --check . && eslint .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/svelte": "^4.0.5",
+    "@tsconfig/svelte": "^5.0.2",
+    "@types/eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "jsdom": "^23.0.1",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.1.2",
+    "svelte": "^4.2.8",
+    "svelte-check": "^3.6.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^1.1.0",
+    "husky": "^8.0.0"
+  }
+}
